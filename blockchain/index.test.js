@@ -40,7 +40,7 @@ describe('Blockchain', () => {
   });
 
   it('replaces the chain with a valid chain', () => {
-    bc2.addBlock('goo');
+    bc2.addBlock('foo');
     bc.replaceChain(bc2.chain);
 
     expect(bc.chain).toEqual(bc2.chain);
