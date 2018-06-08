@@ -48,7 +48,7 @@ class Wallet {
     }));
 
     const walletInputTs = transactions
-      .filter(transaction => transactions.input.address === this.publicKey);
+      .filter(transaction => transaction.input.address === this.publicKey);
 
     let startTime = 0;
 
